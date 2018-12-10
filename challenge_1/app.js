@@ -3,6 +3,30 @@ window.onload = function () {
     let turn = 'X';
     let board = document.getElementById("board").getElementsByTagName("td");
     let btn = document.getElementsByTagName('button')[0];
+    let player1 = document.getElementById('player1-form');
+    let player2 = document.getElementById('player2-form');
+
+
+    player1.onsubmit = function (e) {
+        e.preventDefault();
+        let name = player1.firstChild.nextSibling.value;
+
+        var nameText = document.getElementById('x-name');
+        nameText.innerText = name;
+        player1.innerHTML = '';
+    }
+
+    player2.onsubmit = function (e) {
+        e.preventDefault();
+        let name = player2.firstChild.nextSibling.value;
+        let nameText = document.getElementById('o-name');
+        nameText.innerText = name;
+        player2.innerHTML = '';
+
+    }
+
+
+
 
     const play = function () {
         if (this.innerHTML === '') {
@@ -10,12 +34,15 @@ window.onload = function () {
             setTimeout(function () {
                 checkWinner();
             }, 0)
-            turn = turn === 'X' ? 'O' : 'X';
+            checkTurn();
         }
     }
 
+    const checkTurn = function () {
+        turn = turn === 'X' ? 'O' : 'X';
+    }
+
     const resetGame = function () {
-        turn = 'X';
         for (var i in board) {
             board[i].innerHTML = ''
         }
@@ -58,6 +85,7 @@ window.onload = function () {
             count.innerHTML = String(num);
             alert(winner + ' wins!')
             resetGame();
+            turn = winner;
         }
     }
 

@@ -31,14 +31,32 @@
     </table>
     <button>Reset</button>
 
-    <div class='winners'>
-        <span>X wins: <span id='x-count'>0</span></span>
-        <span>O wins: <span id='o-count'>0</span></span>
+    <div>
+        <form id='player1-form'>
+            <input id='player1' type='text' placeholder='player 1 enter your name' />
+        </form>
+        <form id='player2-form'>
+            <input id='player2' type='text' placeholder='player 2 enter your name' />
+        </form>
+    </div>
 
-        <!-- <span id='X'>X wins: 0</span> -->
-        <!-- <span id='O'>O wins: 0</span> -->
+
+    <div class='winners'>
+        <div class='player1'>
+            <p id='x-name'>Player 1
+                <div id='x-count'>0</div>
+            </p>
+        </div>
+
+        <div class='player2'>
+            <p id='o-name'>Player 2
+                <div id='o-count'>0</div>
+            </p>
+        </div>
     </div>
 
 </body>
 
 </html>
+
+<!-- <span id='o-name'>Player 2 <div id='o-count'>0</div></span> -->

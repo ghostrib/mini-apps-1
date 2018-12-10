@@ -33,13 +33,41 @@ button {
     margin: 20px;
 }
 
+
+
+/* p {
+    display: inline-flex;
+} */
+
 .winners {
     display: flex;
     justify-content: space-around;
     font-family: verdana;
 }
 
+
+/* div {
+    display: flex;
+    justify-content: space-around;
+} */
+
+ input {
+     display: inline-block;
+     width: 220px;
+     height: 24px;
+     font-size: 18px;
+     border-radius: 4px;
+     outline: none;
+}
+
+/*
+
 #x-count, #o-count {
+    display: inline;
     font-family: arial-black;
     font-size: 18px;
-}
+} */
+/* form {
+    display: inline-flex;
+    justify-content: space-between;
+} */
