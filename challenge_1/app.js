@@ -48,6 +48,14 @@ window.onload = function () {
             winner = board[2].innerHTML;
         }
         if (winner) {
+            let count;
+            if (winner === 'X') {
+                count = document.getElementById('x-count');
+            } else if (winner === 'O') {
+                count = document.getElementById('o-count');
+            }
+            var num = Number(count.innerHTML) + 1;
+            count.innerHTML = String(num);
             alert(winner + ' wins!')
             resetGame();
         }

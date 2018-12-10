@@ -32,3 +32,8 @@ button {
     outline: none;
     margin: 20px;
 }
+
+.winners {
+    display: flex;
+    justify-content: space-around;
+}
