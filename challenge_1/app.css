@@ -36,4 +36,10 @@ button {
 .winners {
     display: flex;
     justify-content: space-around;
+    font-family: verdana;
+}
+
+#x-count, #o-count {
+    font-family: arial-black;
+    font-size: 18px;
 }
