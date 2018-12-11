@@ -12,13 +12,16 @@ table.center {
 }
 
 td {
-
     width: 100px;
     height: 100px;
     border: 2px solid black;
     font-family: arial;
     font-size: 74px;
     text-align: center;
+}
+
+td:hover {
+    background-color: #dcdcdc;
 }
 
 button {
@@ -33,26 +36,17 @@ button {
     margin: 20px;
 }
 
-
-
-/* p {
-    display: inline-flex;
-} */
-
 .winners {
     display: flex;
     justify-content: space-around;
     font-family: verdana;
 }
 
-
-/* div {
-    display: flex;
-    justify-content: space-around;
-} */
+form {
+    display: inline-block;
+}
 
  input {
-     display: inline-block;
      width: 220px;
      height: 24px;
      font-size: 18px;
@@ -60,14 +54,17 @@ button {
      outline: none;
 }
 
-/*
+#player-input {
+    display: flex;
+    justify-content: space-around;
+}
+
+#x-name, #o-name {
+    font-family: arial;
+    font-size: 24px;
+}
 
 #x-count, #o-count {
-    display: inline;
     font-family: arial-black;
     font-size: 18px;
-} */
-/* form {
-    display: inline-flex;
-    justify-content: space-between;
-} */
+}
